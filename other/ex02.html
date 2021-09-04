@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        body{
+            height: 100vw;
+        }
+        .box{
+            /* div 크기 지정*/
+            height: 300px;
+            width: 300px;
+
+        }
+        #static{
+            background-color: red;
+            position: static;
+            
+        }
+        #absolute{
+            background-color: orange;
+            /*position설정 후 박스 위치 옮기기*/
+            left : 300px;
+
+            position: absolute;
+        }
+        #relative{
+            background-color: yellow;
+            position: relative;
+            /*좌표설정*/
+            right : 0px;
+        }
+        #fixed{
+            background-color: blue;
+            position: fixed;
+            /*좌표설정*/
+            top : 300px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="box" id="static">static</div>
+        <div class="box" id="absolute">absolute</div>
+        <div class="box" id="relative">relative</div>
+        <div class="box" id="fixed">fixed</div>
+    </div>
+
+</body>
+</html>
+
